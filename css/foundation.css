@@ -4339,10 +4339,12 @@ footer {
 .social span img {
   padding: 0.7em 0.5em 0.5em 0.5em;
   transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
   -webkit-transition: all 0.5s ease;
 }
 .social span img:hover {
   trasnfrom: translate3d(0, 3px, 0);
+  -moz-trasnfrom: translate3d(0, 3px, 0);
   -webkit-transform: translate3d(0, 3px, 0);
 }
 .footer2 {
