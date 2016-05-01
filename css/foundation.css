@@ -4186,11 +4186,16 @@ ____________________________________________ CSS PERSO _________________________
 
 
 @media screen and (max-width: 63.9375em) {
-  .row {padding: 0 15px 0 15px;}
-  .fond-slide {margin-top: 45px;}
+  .row {padding: 0 15px;}
+  /*.fond-slide {margin-top: 45px;}*/
+  .marge_top_slide_sm_md {
+    background: #2EA4BB; /*131313*/
+    z-index: -10;
+    height: 44px; }
 }
+
 nav {
-  z-index: 100;
+  /*z-index: 100;*/
 }
 .top-bar-left, .title-bar-title {
   font-family: "Montserrat_bold" ;
