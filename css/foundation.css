@@ -2033,8 +2033,9 @@ select {
 .close-button {
   position: absolute;
   color: #8a8a8a;
-  right: 1rem;
-  top: 0.5rem;
+  /*right: 1rem;*/
+  left: 0.8rem;
+  top: 0.2rem;
   font-size: 2em;
   line-height: 1;
   cursor: pointer; }
@@ -2564,7 +2565,7 @@ body {
 .off-canvas {
   text-align: center;
   letter-spacing: 1px;
-  padding-top: 50px;
+  padding-top: 40px;
   position: absolute;
   background: #131313;
   z-index: -1;
@@ -2584,13 +2585,13 @@ body {
           -ms-transform: translateX(200px);
               transform: translateX(200px); }
   .off-canvas.position-right {
-    right: -250px;
+    right: -200px;
     top: 0;
-    width: 250px; }
+    width: 200px; }
     .is-open-right {
-      -webkit-transform: translateX(-250px);
-          -ms-transform: translateX(-250px);
-              transform: translateX(-250px); }
+      -webkit-transform: translateX(-200px);
+          -ms-transform: translateX(-200px);
+              transform: translateX(-200px); }
 
 @media screen and (min-width: 40em) {
   .position-left.reveal-for-medium {
@@ -4186,16 +4187,15 @@ ____________________________________________ CSS PERSO _________________________
 
 
 @media screen and (max-width: 63.9375em) {
-  .row {padding: 0 15px;}
-  /*.fond-slide {margin-top: 45px;}*/
+  .row {padding: 0 20px;}
   .marge_top_slide_sm_md {
-    background: #2EA4BB; /*131313*/
+    background: #131313;
     z-index: -10;
-    height: 44px; }
+    height: 44px;}
 }
 
 nav {
-  /*z-index: 100;*/
+  z-index: 100;
 }
 .top-bar-left, .title-bar-title {
   font-family: "Montserrat_bold" ;
@@ -4204,7 +4204,7 @@ nav {
   font-family: "Montserrat_regular";
 }
 .logo_chevron {
-  margin: -0.2em 1em 0 0.3em;
+  margin: -0.2em 1em 0 0.1em;
 }
 .logo_topbar {
   width: 60px;

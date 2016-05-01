@@ -26,11 +26,11 @@
 				</ul>
 			</div>
 	    	<div class="title-bar-right">
-	    		<button class="menu-icon dark" type="button" data-open="offCanvasLeft"></button>
+	    		<button class="menu-icon dark" type="button" data-open="offCanvasRight"></button>
 	    	</div>
 		</div>
-		<!-- off-canvas left menu -->
-	    <div class="off-canvas position-left" id="offCanvasLeft" data-off-canvas>
+		<!-- off-canvas right menu -->
+	    <div class="off-canvas position-right" id="offCanvasRight" data-off-canvas data-position="right">
 	    	<button class="close-button" aria-label="Close menu" type="button" data-close>
 	    		<span aria-hidden="true">x</span>
 			</button>
@@ -43,7 +43,7 @@
 	      </ul>
 	    </div>
 	    <!-- "menu-floyd" top-bar menu for 'large' and up -->
-	    <nav data-sticky-container>
+	    <nav data-sticky-container class="show-for-large">
 		    <div id="menu-floyd" class="top-bar" data-sticky data-options="marginTop:0;" style="width:100%;height:54px;">
 		      <div class="top-bar-left">
 		      	<ul class="menu show-for-large">
@@ -123,9 +123,7 @@
 						<article class="columns media-object" id="article01-small">
 							<div class="media-object-section">
 								<div class="thumbnail">
-									<a href="#article02-small">
 									<img src="images/img_cles-en-main.png" alt="Clés en main" class="img_ronds_section01small">
-									</a>
 								</div>
 							</div>
 							<div class="media-object-section middle">
