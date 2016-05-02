@@ -2033,8 +2033,8 @@ select {
 .close-button {
   position: absolute;
   color: #8a8a8a;
-  /*right: 1rem;*/
-  left: 0.8rem;
+  right: 0.8rem;
+  /*left: 0.8rem;*/
   top: 0.2rem;
   font-size: 2em;
   line-height: 1;
