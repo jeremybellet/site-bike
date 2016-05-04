@@ -4223,6 +4223,8 @@ nav {
 .fond-slide {
   background: url(../images/img_slide_01.jpg) no-repeat center;
   -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
   /*height: 83vh;*//*bon résultat mais bcp trop gros sur mobile*/
   height: 40vw;
@@ -4297,11 +4299,13 @@ en lien direct avec le padding de "panel_padding" --- */
 }
 .zoom_container img:hover {
   transform: scale(1.05);
+  -o-transform: scale(1.05);
   -moz-transform: scale(1.05);
   -webkit-transform: scale(1.05);
 }
 .grayscale:hover {
   filter: grayscale(60%);
+  -o-filter: grayscale(60%);
   -moz-filter: grayscale(60%);
   -webkit-filter: grayscale(60%);
 }
@@ -4312,14 +4316,18 @@ en lien direct avec le padding de "panel_padding" --- */
   height: 30vw;
   min-height: 160px;
   background: url(../images/img_fond_parallax_bas.jpg) no-repeat center fixed;
-  background-size: cover;
   -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   box-shadow: inset 0 2px 5px rgba(0, 0, 0, .4);
   -webkit-box-shadow: inset 0 2px 5px rgba(0, 0, 0, .4);
 }
 .hautdepage-effect {
   transition: all 0.5s ease;
   -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
   opacity: 0.5
 }
 .hautdepage-effect:hover {opacity: 0.8;}
