@@ -4269,29 +4269,19 @@ en lien direct avec le padding de "panel_padding" --- */
 
 #section01 img {
   padding: 1em 0 1.5em 0;
-  transition: all 1s ease;
-  -o-transition: all 1s ease;  /* opera */
-  -moz-transition: all 1s ease;  /* mozilla */
-  -webkit-transition:  all 1s ease;  /* safari */
-}
-#section01 img:hover {
-  transform: rotateY(180deg);
-  -o-transform: rotateY(180deg);
-  -moz-transform: rotateY(180deg);
-  -webkit-transform: rotateY(180deg);
-  /*transform: rotate3d(0, 1, 0, 180deg);*/ /* même que le précédent mais "3D" */
-  /*transform: translate3d(25px, 0, 0) rotate3d(0, 0, 1, 40deg);*/
 }
 .img_ronds_section01small {
   padding: 1em 0 1.5em 0;
   width: 25vw;
   max-width: 120px !important;
 }
-.img_section02, .img_section03 {
-  transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -webkit-transition: all 0.5s ease;
+#section01 img, .img_section02, .img_section03 {
+  transition: all .5s ease;
+  -o-transition: all .5s ease;  /* opera */
+  -moz-transition: all .5s ease;  /* mozilla */
+  -webkit-transition:  all .5s ease;  /* safari */
 }
+
 /* creer une div "zoom_container" autour de l'image */
 .zoom_container {
   overflow: hidden;
@@ -4309,6 +4299,36 @@ en lien direct avec le padding de "panel_padding" --- */
   -moz-filter: grayscale(60%);
   -webkit-filter: grayscale(60%);
 }
+
+
+
+
+/*------------------ test apparition douce.. --------------------*/
+
+.vignets {
+    animation: fadein 3s;
+    -moz-animation: fadein 3s; /* Firefox */
+    -webkit-animation: fadein 3s; /* Safari et Chrome */
+    -o-animation: fadein 3s; /* Opera */
+}
+@keyframes fadein {
+    from {opacity:0;}
+    to {opacity:1;}
+}
+@-moz-keyframes fadein {
+    from {opacity:0;}
+    to {opacity:1;}
+}
+@-webkit-keyframes fadein {
+    from {opacity:0;}
+    to {opacity:1;}
+}
+@-o-keyframes fadein {
+    from {opacity:0;}
+    to {opacity: 1;}
+}
+
+
 
 
 .parallax-bas {
